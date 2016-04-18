@@ -1,0 +1,13 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>my-dubbo-demo</groupId>
+		<artifactId>my-dubbo-demo</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>dubbo-demo-provider-facade</groupId>
+	<artifactId>dubbo-demo-provider-facade</artifactId>
+	<name>dubbo-demo-provider-facade name</name>
+	<description>dubbo-demo-provider-facade description</description>
+</project>
