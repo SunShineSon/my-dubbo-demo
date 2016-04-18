@@ -10,9 +10,9 @@
 	<artifactId>dubbo-demo-provider-impl</artifactId>
 	<name>dubbo-demo-provider-impl name</name>
 	<description>dubbo-demo-provider-impl description</description>
-	
+
 	<dependencies>
-	
+
 		<dependency>
 			<groupId>dubbo-demo-provider-facade</groupId>
 			<artifactId>dubbo-demo-provider-facade</artifactId>
@@ -20,4 +20,30 @@
 		</dependency>
 
 	</dependencies>
+
+	<build>
+		<finalName>dubbo-demo-provider-impl</finalName>
+
+		<resources>
+			<resource>
+				<targetPath>${project.build.directory}/classes</targetPath>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>**/*.xml</include>
+					<include>**/*.properties</include>
+				</includes>
+			</resource>
+			<!-- 结合com.alibaba.dubbo.container.Main -->
+			<resource>
+				<targetPath>${project.build.directory}/classes/META-INF/spring</targetPath>
+				<directory>src/main/resources/spring</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>spring-context.xml</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
+
 </project>
