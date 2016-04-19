@@ -11,8 +11,8 @@ public class ConsumerDemo {
 		try {
 			ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring/spring-context.xml");
 			context.start();
-			/*LuckManager luckManager = new LuckManager();
-			luckManager.service();*/
+			Luck luck = (Luck) context.getBean("luck");
+			luck.service("comsumer str");
 		} catch (Exception e) {
 			log.error("== DubboProvider context start error:", e);
 		}

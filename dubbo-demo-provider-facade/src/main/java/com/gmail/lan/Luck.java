@@ -2,5 +2,5 @@ package com.gmail.lan;
 
 public interface Luck {
 
-	public void service();
+	public void service(String str);
 }

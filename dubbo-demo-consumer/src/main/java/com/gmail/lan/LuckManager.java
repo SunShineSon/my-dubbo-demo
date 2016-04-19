@@ -7,8 +7,8 @@ public class LuckManager {
 	@Autowired
 	private Luck luck;
 	
-	public void service(){
-		luck.service();
+	public void service(String str){
+		luck.service(str);
 	}
 
 }

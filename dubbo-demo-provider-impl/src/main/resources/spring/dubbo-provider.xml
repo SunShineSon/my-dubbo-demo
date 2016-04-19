@@ -17,5 +17,8 @@
 		
 	<!-- 用户服务接口 -->
 	<dubbo:service interface="com.gmail.lan.Luck" ref="luck" />
+	
+	<!-- 和本地bean一样实现服务 -->
+    <bean id="luck" class="com.gmail.lan.LuckImpl" />
 
 </beans>  
