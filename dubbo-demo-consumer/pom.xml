@@ -1,12 +1,55 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>my-dubbo-demo</groupId>
-    <artifactId>my-dubbo-demo</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>
-  <groupId>dubbo-demo-consumer</groupId>
-  <artifactId>dubbo-demo-consumer</artifactId>
-  <name>dubbo-demo-consumer name</name>
-  <description>dubbo-demo-consumer description</description>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>my-dubbo-demo</groupId>
+		<artifactId>my-dubbo-demo</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>dubbo-demo-consumer</groupId>
+	<artifactId>dubbo-demo-consumer</artifactId>
+	<name>dubbo-demo-consumer name</name>
+	<description>dubbo-demo-consumer description</description>
+
+	<build>
+		<finalName>dubbo-demo-consumer</finalName>
+
+		<resources>
+			<resource>
+				<targetPath>${project.build.directory}/classes</targetPath>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>**/*.xml</include>
+					<include>**/*.properties</include>
+				</includes>
+			</resource>
+			<!-- 结合com.alibaba.dubbo.container.Main -->
+			<resource>
+				<targetPath>${project.build.directory}/classes/META-INF/spring</targetPath>
+				<directory>src/main/resources/spring</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>spring-context.xml</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
+	
+	<dependencies>
+
+		<dependency>
+			<groupId>dubbo-demo-provider-facade</groupId>
+			<artifactId>dubbo-demo-provider-facade</artifactId>
+			<version>${dubbo-demo-provider-facade.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>dubbo-demo-config</groupId>
+			<artifactId>dubbo-demo-config</artifactId>
+			<version>${dubbo-demo-config.version}</version>
+		</dependency>
+		
+	</dependencies>
+	
 </project>

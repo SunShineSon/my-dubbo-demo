@@ -18,6 +18,12 @@
 			<artifactId>dubbo-demo-provider-facade</artifactId>
 			<version>${dubbo-demo-provider-impl.version}</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>dubbo-demo-config</groupId>
+			<artifactId>dubbo-demo-config</artifactId>
+			<version>${dubbo-demo-config.version}</version>
+		</dependency>
 
 	</dependencies>
 

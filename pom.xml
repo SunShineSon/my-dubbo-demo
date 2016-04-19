@@ -22,6 +22,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<dubbo-demo-provider-impl.version>0.0.1-SNAPSHOT</dubbo-demo-provider-impl.version>
+		<dubbo-demo-provider-facade.version>0.0.1-SNAPSHOT</dubbo-demo-provider-facade.version>
+		<dubbo-demo-config.version>0.0.1-SNAPSHOT</dubbo-demo-config.version>
 		<org.springframework.version>3.2.4.RELEASE</org.springframework.version>
 	</properties>
 

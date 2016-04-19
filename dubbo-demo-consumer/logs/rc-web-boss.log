@@ -1,0 +1,141 @@
+[INFO ][20160419 11:17:37,753][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4dbb3e34: display name [org.springframework.context.support.ClassPathXmlApplicationContext@4dbb3e34]; startup date [Tue Apr 19 11:17:37 CST 2016]; root of context hierarchy
+[INFO ][20160419 11:17:37,852][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20160419 11:17:38,517][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/dubbo-consumer.xml]
+[INFO ][20160419 11:17:38,604][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20160419 11:17:38,648][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@4dbb3e34]: org.springframework.beans.factory.support.DefaultListableBeanFactory@6b65532d
+[INFO ][20160419 11:17:38,720][PropertiesLoaderSupport:178] Loading properties file from class path resource [service.properties]
+[INFO ][20160419 11:17:38,721][DefaultSingletonBeanRegistry:421] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6b65532d: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,dubbo-demo-consumer,com.alibaba.dubbo.config.RegistryConfig,luck]; root of factory hierarchy
+[ERROR][20160419 11:17:38,723][ConsumerDemo:17] == DubboProvider context start error:
+org.springframework.beans.factory.BeanInitializationException: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [service.properties] cannot be opened because it does not exist
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:78)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:553)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:527)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:362)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.gmail.lan.ConsumerDemo.main(ConsumerDemo.java:12)
+Caused by: java.io.FileNotFoundException: class path resource [service.properties] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:143)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:182)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.mergeProperties(PropertiesLoaderSupport.java:161)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:69)
+	... 6 more
+[INFO ][20160419 11:19:36,432][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6e3c9e46: display name [org.springframework.context.support.ClassPathXmlApplicationContext@6e3c9e46]; startup date [Tue Apr 19 11:19:36 CST 2016]; root of context hierarchy
+[INFO ][20160419 11:19:36,552][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20160419 11:19:37,174][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/dubbo-consumer.xml]
+[INFO ][20160419 11:19:37,261][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20160419 11:19:37,305][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@6e3c9e46]: org.springframework.beans.factory.support.DefaultListableBeanFactory@5a21fdc8
+[INFO ][20160419 11:19:37,349][PropertiesLoaderSupport:178] Loading properties file from class path resource [service.properties]
+[INFO ][20160419 11:19:37,350][DefaultSingletonBeanRegistry:421] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5a21fdc8: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,dubbo-demo-consumer,com.alibaba.dubbo.config.RegistryConfig,luck]; root of factory hierarchy
+[ERROR][20160419 11:19:37,351][ConsumerDemo:17] == DubboProvider context start error:
+org.springframework.beans.factory.BeanInitializationException: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [service.properties] cannot be opened because it does not exist
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:78)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:553)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:527)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:362)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.gmail.lan.ConsumerDemo.main(ConsumerDemo.java:12)
+Caused by: java.io.FileNotFoundException: class path resource [service.properties] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:143)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:182)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.mergeProperties(PropertiesLoaderSupport.java:161)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:69)
+	... 6 more
+[INFO ][20160419 11:20:27,482][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4af45223: display name [org.springframework.context.support.ClassPathXmlApplicationContext@4af45223]; startup date [Tue Apr 19 11:20:27 CST 2016]; root of context hierarchy
+[INFO ][20160419 11:20:27,616][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20160419 11:20:28,230][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/dubbo-consumer.xml]
+[INFO ][20160419 11:20:28,303][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20160419 11:20:28,356][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@4af45223]: org.springframework.beans.factory.support.DefaultListableBeanFactory@35ba7dab
+[INFO ][20160419 11:20:28,470][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@35ba7dab: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dubbo-demo-consumer,com.alibaba.dubbo.config.RegistryConfig,luck]; root of factory hierarchy
+[ERROR][20160419 11:20:28,913][ConsumerDemo:17] == DubboProvider context start error:
+java.lang.NullPointerException
+	at com.gmail.lan.LuckManager.service(LuckManager.java:11)
+	at com.gmail.lan.ConsumerDemo.main(ConsumerDemo.java:15)
+[INFO ][20160419 11:29:42,828][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4af45223: display name [org.springframework.context.support.ClassPathXmlApplicationContext@4af45223]; startup date [Tue Apr 19 11:29:42 CST 2016]; root of context hierarchy
+[INFO ][20160419 11:29:42,954][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20160419 11:29:43,598][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/dubbo-consumer.xml]
+[INFO ][20160419 11:29:43,679][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20160419 11:29:43,732][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@4af45223]: org.springframework.beans.factory.support.DefaultListableBeanFactory@21ee921c
+[INFO ][20160419 11:29:43,851][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@21ee921c: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dubbo-demo-consumer,com.alibaba.dubbo.config.RegistryConfig,luck]; root of factory hierarchy
+[ERROR][20160419 11:29:44,300][ConsumerDemo:17] == DubboProvider context start error:
+java.lang.NullPointerException
+	at com.gmail.lan.LuckManager.service(LuckManager.java:11)
+	at com.gmail.lan.ConsumerDemo.main(ConsumerDemo.java:15)
+[INFO ][20160419 11:38:02,700][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@65139ac8: display name [org.springframework.context.support.ClassPathXmlApplicationContext@65139ac8]; startup date [Tue Apr 19 11:38:02 CST 2016]; root of context hierarchy
+[INFO ][20160419 11:38:02,829][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20160419 11:38:03,501][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/dubbo-consumer.xml]
+[INFO ][20160419 11:38:03,586][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20160419 11:38:03,632][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@65139ac8]: org.springframework.beans.factory.support.DefaultListableBeanFactory@697a3d13
+[INFO ][20160419 11:38:03,759][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@697a3d13: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dubbo-demo-consumer,com.alibaba.dubbo.config.RegistryConfig,luck]; root of factory hierarchy
+[ERROR][20160419 11:38:04,206][ConsumerDemo:17] == DubboProvider context start error:
+java.lang.NullPointerException
+	at com.gmail.lan.LuckManager.service(LuckManager.java:11)
+	at com.gmail.lan.ConsumerDemo.main(ConsumerDemo.java:15)
+[INFO ][20160419 11:43:47,522][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4af45223: display name [org.springframework.context.support.ClassPathXmlApplicationContext@4af45223]; startup date [Tue Apr 19 11:43:47 CST 2016]; root of context hierarchy
+[INFO ][20160419 11:43:47,632][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20160419 11:43:48,245][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/dubbo-consumer.xml]
+[INFO ][20160419 11:43:48,326][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20160419 11:43:48,378][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@4af45223]: org.springframework.beans.factory.support.DefaultListableBeanFactory@49ab9d75
+[INFO ][20160419 11:43:48,492][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@49ab9d75: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dubbo-demo-consumer,com.alibaba.dubbo.config.RegistryConfig,luck]; root of factory hierarchy
+[ERROR][20160419 11:43:49,245][ConsumerDemo:17] == DubboProvider context start error:
+java.lang.NullPointerException
+	at com.gmail.lan.LuckManager.service(LuckManager.java:11)
+	at com.gmail.lan.ConsumerDemo.main(ConsumerDemo.java:15)
+[INFO ][20160419 11:44:10,523][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7254d7ac: display name [org.springframework.context.support.ClassPathXmlApplicationContext@7254d7ac]; startup date [Tue Apr 19 11:44:10 CST 2016]; root of context hierarchy
+[INFO ][20160419 11:44:10,636][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20160419 11:44:11,250][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/dubbo-consumer.xml]
+[INFO ][20160419 11:44:11,327][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20160419 11:44:11,380][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@7254d7ac]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1187b50
+[INFO ][20160419 11:44:11,497][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1187b50: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dubbo-demo-consumer,com.alibaba.dubbo.config.RegistryConfig,luck]; root of factory hierarchy
+[INFO ][20160419 11:47:38,238][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@201b97d8: display name [org.springframework.context.support.ClassPathXmlApplicationContext@201b97d8]; startup date [Tue Apr 19 11:47:38 CST 2016]; root of context hierarchy
+[INFO ][20160419 11:47:38,364][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20160419 11:47:39,025][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/dubbo-consumer.xml]
+[INFO ][20160419 11:47:39,114][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20160419 11:47:39,159][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@201b97d8]: org.springframework.beans.factory.support.DefaultListableBeanFactory@5f37c834
+[INFO ][20160419 11:47:39,213][PropertiesLoaderSupport:178] Loading properties file from class path resource [service.properties]
+[INFO ][20160419 11:47:39,214][DefaultSingletonBeanRegistry:421] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5f37c834: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,dubbo-demo-consumer,com.alibaba.dubbo.config.RegistryConfig,luck]; root of factory hierarchy
+[ERROR][20160419 11:47:39,215][ConsumerDemo:17] == DubboProvider context start error:
+org.springframework.beans.factory.BeanInitializationException: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [service.properties] cannot be opened because it does not exist
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:78)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:553)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:527)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:362)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.gmail.lan.ConsumerDemo.main(ConsumerDemo.java:12)
+Caused by: java.io.FileNotFoundException: class path resource [service.properties] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:143)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:182)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.mergeProperties(PropertiesLoaderSupport.java:161)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:69)
+	... 6 more
+[INFO ][20160419 12:03:01,693][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6d2a123d: display name [org.springframework.context.support.ClassPathXmlApplicationContext@6d2a123d]; startup date [Tue Apr 19 12:03:01 CST 2016]; root of context hierarchy
+[INFO ][20160419 12:03:01,812][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20160419 12:03:02,413][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/dubbo-consumer.xml]
+[INFO ][20160419 12:03:02,496][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20160419 12:03:02,540][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@6d2a123d]: org.springframework.beans.factory.support.DefaultListableBeanFactory@6edd9715
+[INFO ][20160419 12:03:02,584][PropertiesLoaderSupport:178] Loading properties file from class path resource [service.properties]
+[INFO ][20160419 12:03:02,585][DefaultSingletonBeanRegistry:421] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6edd9715: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,dubbo-demo-consumer,com.alibaba.dubbo.config.RegistryConfig,luck]; root of factory hierarchy
+[ERROR][20160419 12:03:02,586][ConsumerDemo:17] == DubboProvider context start error:
+org.springframework.beans.factory.BeanInitializationException: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [service.properties] cannot be opened because it does not exist
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:78)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:553)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:527)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:362)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.gmail.lan.ConsumerDemo.main(ConsumerDemo.java:12)
+Caused by: java.io.FileNotFoundException: class path resource [service.properties] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:143)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:182)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.mergeProperties(PropertiesLoaderSupport.java:161)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:69)
+	... 6 more
+[INFO ][20160419 12:07:55,662][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6d2a123d: display name [org.springframework.context.support.ClassPathXmlApplicationContext@6d2a123d]; startup date [Tue Apr 19 12:07:55 CST 2016]; root of context hierarchy
+[INFO ][20160419 12:07:55,785][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20160419 12:07:56,410][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/dubbo-consumer.xml]
+[INFO ][20160419 12:07:56,493][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20160419 12:07:56,540][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@6d2a123d]: org.springframework.beans.factory.support.DefaultListableBeanFactory@5a21fdc8
+[INFO ][20160419 12:07:56,586][PropertiesLoaderSupport:178] Loading properties file from class path resource [service.properties]
+[INFO ][20160419 12:07:56,807][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5a21fdc8: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,dubbo-demo-consumer,com.alibaba.dubbo.config.RegistryConfig,luck]; root of factory hierarchy
